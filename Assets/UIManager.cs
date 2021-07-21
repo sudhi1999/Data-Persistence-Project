@@ -10,10 +10,14 @@ public class UIManager : MonoBehaviour
     public TMP_InputField playerNameIF;
     public Button startBtn;
     public Button quitBtn;
+    public TMP_Text bestScoreTxt;
     
 
     private void Start()
     {
+        PersistanceManager.instance.LoadScoreDetails();
+        bestScoreTxt.text = $"Best Score : {PersistanceManager.instance.highScorePlayerName} : {PersistanceManager.instance.highScore}";
+
         startBtn.onClick.AddListener(() =>
         {
 

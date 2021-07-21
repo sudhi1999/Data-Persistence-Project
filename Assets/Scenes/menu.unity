@@ -1306,6 +1306,7 @@ MonoBehaviour:
   playerNameIF: {fileID: 820335420}
   startBtn: {fileID: 451114531}
   quitBtn: {fileID: 347496106}
+  bestScoreTxt: {fileID: 380410618}
 --- !u!1 &1344407558
 GameObject:
   m_ObjectHideFlags: 0
@@ -1735,6 +1736,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44864c74ca26c4e4da19cee4b8d0a056, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerName: 
+  playerScore: 0
+  highScore: 0
+  highScorePlayerName: 
 --- !u!4 &1954569157
 Transform:
   m_ObjectHideFlags: 0

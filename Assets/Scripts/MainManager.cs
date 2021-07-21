@@ -75,7 +75,9 @@ public class MainManager : MonoBehaviour
         PersistanceManager.instance.playerScore = m_Points;
         PersistanceManager.instance.CheckHighScore();
         highScoreText.text = System.String.Format("Best Score: {0} : {1} ", PersistanceManager.instance.highScorePlayerName, PersistanceManager.instance.highScore);
+        PersistanceManager.instance.SaveScoreDetails();
         m_GameOver = true;
         GameOverText.SetActive(true);
     }
 }
+
